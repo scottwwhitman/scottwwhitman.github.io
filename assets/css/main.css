@@ -1,4 +1,9 @@
 /* custom styles */
+h1 {
+  color: white;
+  background-color; blue;
+}
+
 .skiPhotos {
   height: 10em;
   width: 20em;
