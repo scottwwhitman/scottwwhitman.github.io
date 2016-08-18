@@ -1,25 +1,37 @@
 /* custom styles */
 body {
-  background-color: grey;
+  background-color: black;
+}
+
+nav {
+  margin: 6px;
+}
+
+.button {
+  display: inline-block;
+  color: white;
+  background-color: gray;
+  border: 2px solid white;
+  border-radius: 3px;
 }
 
 h1 {
   color: white;
   background-color: black;
-  display: block;
-  width: 1000px;
-  padding: 3px;
+}
+
+h2 {
+  color: white;
 }
 
 .skiPhotos {
   display: inline-block;
   height: 10em;
   width: 20em;
-  border: 2px solid black;
+  border: 2px solid white;
   margin: 4px;
 }
 
-footer {
+footer .p {
   align: center;
-  display: block;
 }
