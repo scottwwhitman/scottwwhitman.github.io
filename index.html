@@ -10,8 +10,12 @@
   <!-- mobile -->
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <!-- styles -->
+  <!-- Bootstrap CSS from CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="vendor/css/normalize.css">
   <link rel="stylesheet" type="text/css" href="assets/css/main.css">
+  <!-- jQuery from CDN -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <!-- scripts -->
   <script type="text/javascript" src="assets/js/app.js"></script>
   <!-- favicon -->
@@ -19,29 +23,85 @@
 </head>
 <body>
   <div id="page-wrapper">
-    <h1>Scott Whitman's GA work page</h1>
-    <nav>
-      <a class="button" href="#pics">Cool ski pics</a>
-      <a class="button" href="#myGAWork">My GA Work</a>
-      <a class="button" href="#allMyInfo">All My Info</a>
+    <nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <div id="pics">
-      <h2>Cool ski pics</h2>
-      <img class="skiPhotos" src="assets/imgs/skiing_image_1.jpg"/>
-      <img class="skiPhotos" src="assets/imgs/skiing_image_2.webp"/>
-      <img class="skiPhotos" src="assets/imgs/skiing_image_3.jpg"/>
+
+    <div class="container text-center" id="about">
+      <h1>Scott Whitman</h1>
+      <img src="assets/imgs/scott.png" alt="Responsive image" class="img-circle img-responsive center-block" id="scottPhoto">
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 col-xs-offset-4 col-sm-offset-4 col-md-offset-4 col-lg-offset-4">
+              <a href="https://www.linkedin.com/in/scwhitman"><img src="assets/imgs/linkedin-512.png" alt="Responsive image" class="img-responsive" id="linkedIn"></a>
+        </div>
+        <div class="col-xs-5 col-sm-5 col-md-5 col-lg-5">
+            <a href="https://github.com/scottwwhitman"><img src="assets/imgs/github.png" class="img-responsive" id="gitHub"></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3"></div>
+      </div>
+      <!-- <p id="github">Check me out on <a href="https://github.com/scottwwhitman">GitHub</a></p>
+      <p id="linkedin">Find my cred @ <a href="https://www.linkedin.com/in/scwhitman">LinkedIn</a></p> -->
     </div>
-    <div id="myGAWork">
-      <h2>My GA Work</h2>
-      <a class="workLink" href="https://github.com/scottwwhitman/functions-training">Functions Training</a>
-      <a class="workLink" href="https://github.com/scottwwhitman/jquery-events-training">JQuery Events Training</a>
+
+    <div class="line">
+      <hr>
     </div>
-    <footer id="allMyInfo">
-      <h2>All My Info</h2>
-      <p id="email">Contact me <a href="scott.w.whitman@gmail.com">here</a></p>
-      <p id="github">Check me out on <a href="https://github.com/scottwwhitman">GitHub</a></p>
-      <p id="linkedin">Find my cred @ <a href="https://www.linkedin.com/in/scwhitman">LinkedIn</a></p>
-    </footer>
+
+    <div class="container text-center" id="portfolio">
+      <h1>Portfolio</h1>
+      <div class="row">
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <a class="workLink" href="https://github.com/scottwwhitman/functions-training">Functions Training</a>
+        </div>
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+          <a class="workLink" href="https://github.com/scottwwhitman/jquery-events-training">JQuery Events Training</a>
+        </div>
+        <div class="col-xs-11 col-sm-3 col-md-4 col-lg-4 col-xs-offset-1 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+          <a class="workLink" href="https://github.com/scottwwhitman/tic-tac-toe">tic-tac-toe</a>
+        </div>
+      <div class="row">
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-2 col-md-offset-2 col-lg-offset-2">
+          <a class="workLink" href="https://github.com/scottwwhitman/geoquakes">geoquakes</a>
+        </div>
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+          <a class="workLink" href="">more to come</a>
+        </div>
+        <div class="col-xs-11 col-sm-3 col-md-3 col-lg-3 col-xs-offset-1 col-sm-offset-0 col-md-offset-0 col-lg-offset-0">
+          <a class="workLink" href="">more to come</a>
+        </div>
+      <p></p>
+    </div>
+
+    <div class="line">
+      <hr>
+    </div>
+
+    <div class="container text-center" id="contact">
+      <h1>Contact</h1>
+      <div class="row">
+        <div class="col-xs-7 col-sm-7 col-md-7 col-lg-7 col-xs-offset-5 col-sm-offset-5 col-md-offset-5 col-lg-offset-5">
+          <a href="mailto:scott.w.whitman@gmail.com"><img src="assets/imgs/email.png" class="img-responsive" id="email"></a>
+        </div>
+      <p></p>
+    </div>
+
+    <div class="line">
+      <hr>
+    </div>
+
+    <footer>
+      <div class="container text-center">
+        <h5>Made in California by Scott Whitman</h5>
+      </div>
+     </footer>
   </div>
 </body>
 </html>
